@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 150vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)) , url(img2/3.jpg);
+    background-size: cover;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eeeded;
+    font-weight: bold;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    transition: 2.5 ease;
+}
+
+nav ul li a:hover {
+    border-radius: 50%;
+    color: indianred;
+    transform: scale(1.25);
+    scale: 1.5;
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+span {
+    color: indianred;
+}
+img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+}
+img.logo-img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+    margin-left: -57px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 425px;
+    border: none;
+    border-radius: 20px;
+}
+h2, h3{
+    font-size: 30px;
+    color: #eeeded;
+}
+p{
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+    .logo2{
+        position: absolute;
+        float: left;
+        margin-left: -25px;
+        margin-top: 5px;
+        height: 20px;
+        width: 20px;
+    }
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img2/logo2.png" alt="Logo" class="logo-img">
+            Code <span>Impact</span>
+        </div>
+        <ul>
+            <li><a href="aboutme.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>More About Me</h2>
+        <img src="img2/pro1.jpg" alt="About Me Image">
+        <p>
+            I'm Lhyndel Acosta Sario, 22 years old, I am a dedicated and enthusiastic student pursuing Information Technology at Phinma Araullo University South Campus.
+As someone deeply passionate about Technology, I am eager to contribute and to learn from the dynamic environment.
+Figuring out the complexities of technology, from system design to coding, and all in between, is my passion. I love Playing different kinds of Instruments.
+        </p>
+        <h3>Our Beer cover by - Itchyworms</h3>
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Flhyndel.sario.7%2Fvideos%2F206187108692851%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    </section>
+</body>
+</html>

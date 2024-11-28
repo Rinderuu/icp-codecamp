@@ -1,5 +1,128 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=baloo+bhaijan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(8.jpg);
+        background-size: cover;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+        color: #eeeded;
+        font-weight: bolder;
+    }
+    nav {
+        width: 100%;
+        height: 10%; /* Adjust height for responsiveness */
+        color: #fff;
+        display: flex;
+        justify-content: center; /* Center logo horizontally */
+        align-items: center;
+    }
+    .logo {
+        font-size: 2em;
+        letter-spacing: 2px;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+        font-weight: bolder;
+        display: flex; /* Align image and text horizontally */
+        align-items: center;
+    }
+    .logo img {
+        width: 30px; /* Adjust size of logo image */
+        margin-right: 10px; /* Add spacing between image and text */
+    }
+    .h-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+    .h-text span {
+        letter-spacing: 5px;
+        font-size: 25px;
+        color: indianred;
+    }
+    .h-text h1 {
+        font-size: 3.5em;
+    }
+    .h-text a {
+        text-decoration: none;
+        background: indianred;
+        padding: 10px 20px;
+        color: #fff;
+        letter-spacing: 5px;
+        transition: 0.4s;
+    }
+    .h-text a:hover {
+        border: 1px solid indianred;
+        background: transparent;
+    }
+    span {
+        color: indianred;
+    }
+    a.projects-link {
+        position: fixed;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+        bottom: 5%; /* Adjust position for responsiveness */
+        right: 5%; /* Adjust position for responsiveness */
+        text-decoration: none;
+        background: indianred;
+        padding: 10px 20px;
+        color: #fff;
+        letter-spacing: 5px;
+        transition: 0.4s;
+    }
+    a.projects-link:hover {
+        border: 1px solid indianred;
+        background: transparent;
+    }
+
+    /* Media Query for responsiveness */
+    @media only screen and (max-width: 768px) {
+        .logo {
+            font-size: 1.5em;
+        }
+        .h-text h1 {
+            font-size: 2.5em;
+        }
+        .h-text a {
+            padding: 8px 16px;
+        }
+        a.projects-link {
+            bottom: 3%;
+            right: 3%;
+        }
+    }
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo2.png">
+            Code <span>Impact</span>
+        </div>
+    </nav>
+    <section class="h-text">
+        <span>Hello, I'm</span>
+        <h1>Lhyndel Sario</h1>
+        <br>
+        <a href="homepage1.html">ENTER</a>
+    </section>
+    <a href="#" class="projects-link">Projects</a>
+</body>
+</html>

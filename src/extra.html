@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Projects</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=baloo+bhaijan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    body {
+        background-image: url(img/bgbg.png);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0;
+        padding: 0;
+    }
+
+    .mine {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden; /* Prevents scroll bar when footer is fixed */
+    }
+
+    nav {
+        display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: #eeeded;
+        text-shadow: 10px 1px 10px rgba(0, 0, 0, .5);
+        font-size: 35px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .logo2 {
+        position: absolute;
+        float: left;
+        margin-left: -45px;
+        margin-top: 5px;
+        height: 40px;
+        width: 40px;
+    }
+
+    span {
+        color: #f9004d;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #eeeded;
+        font-weight: bold;
+        transition: 2.5 ease;
+    }
+
+    nav ul li a:hover {
+        border-radius: 50%;
+        color: #f9004d;
+        transform: scale(1.25);
+        scale: 1.5;
+    }
+    h2 {
+      color: #eeeded;
+      font-size: 40px;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+      text-align: center;
+      margin-top: 30px;
+      font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    .project-content {
+        display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Set to 4 columns */
+      gap: 20px;
+      padding: 20px;
+      
+    }
+
+    .project-item {
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+      font-family: 'Baloo Bhaijaan 2', sans-serif;
+      color: #eeeded;
+      font-weight: bolder;
+    }
+
+    .project-item img {
+      max-width: 300px;
+      height: 150px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    .project-item:hover img {
+      transform: scale(1.1); /* Increase size on hover */
+      
+    }
+    .logo-link{
+    text-decoration: none;
+  }
+  .container{
+    text-align: center;
+  }
+  .container button{
+    padding: 6px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px; 
+  }
+  .container :hover{
+    transform: scale(1.1);
+    background-color: indianred;
+  }
+  #active{
+    background-color: indianred;
+    font-weight: bolder;
+    color: #eeeded;
+  }
+
+
+@media screen and (max-width: 768px){
+    nav {
+        width: 90%;
+    }
+
+    .logo, .logo2{
+      margin-top: -15px;
+    }
+    .logo {
+        font-size: 20px;
+        position: absolute;
+    }
+    .logo2{
+        position: absolute;
+        float: left;
+        margin-left: -25px;
+        margin-top: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    nav ul li {
+        font-size: small;
+        margin: 5px;
+    }
+    .project-content {
+        display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Set to 4 columns */
+      gap: 20px;
+      padding: 20px;
+      
+    }
+  }
+</style>
+<body>
+    <div class="mine">
+        <nav>
+          <a href="index.html" class="logo-link">
+            <h2 class="logo"><img src="img/logo2.png" class="logo2"> Code<span>Impact</span></h2>
+        </a>
+            <ul>
+                <li><a href="homepage1.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="links.html">Sample Work</a></li>
+                <li><a href="Education.html">Education</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <a href="links.html"><button>Folder Links</button></a>
+            <a href="extra.html"><button id="active">Extra</button></a>
+        </div>
+
+
+        <h2>Extra</h2>
+
+        <div class="project-content">
+
+          <div class="project-item">
+            <a href="">
+            <img src="img/logo11.png" alt="Project Image 1">
+            </a>
+            <p>Logo Design</p>
+          </div>
+          <div class="project-item">
+            <a href="">
+            <img src="img/SARIO.png" alt="Project Image 1">
+            </a>
+            <p>Website Design</p>
+          </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=baloo+bhaijan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    body {
+        background-image: url(img/bgbg.png);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0;
+        padding: 0;
+    }
+
+    .mine {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: #eeeded;
+        text-shadow: 10px 1px 10px rgba(0, 0, 0, .5);
+        font-size: 35px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .logo2 {
+        position: absolute;
+        float: left;
+        margin-left: -45px;
+        margin-top: 5px;
+        height: 40px;
+        width: 40px;
+    }
+
+    span {
+        color: #f9004d;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #eeeded;
+        font-weight: bold;
+        transition: 2.5 ease;
+    }
+
+    nav ul li a:hover {
+        border-radius: 50%;
+        color: #f9004d;
+        transform: scale(1.25);
+        scale: 1.5;
+    }
+    .about{
+        width: 100%;
+        padding: 78px 0px;
+        
+    }
+    img{
+        height: 450px;
+        margin-top: 120px;
+        width: 420px;
+        border-radius: 20px;
+    }
+    .about-text{
+        width: 550px;
+    }
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-text h1{
+        color: white;
+        font-size: 80px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .about-text h5{
+        color: white;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    span{
+        color: indianred;
+    }
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    button {
+    background-color: indianred;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 whitesmoke;
+    
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid white;
+    
+}
+.logo-link{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+    .logo2{
+        position: absolute;
+        float: left;
+        margin-left: -25px;
+        margin-top: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    nav ul li {
+        font-size: small;
+        margin: 5px;
+    }
+
+    .about{
+        width: 100%;
+        padding: 300px 0px;
+        
+    }
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        position: absolute;
+        margin-bottom:1150px;
+    }
+    .about-text{
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .main{
+        max-width: 100%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-text h1{
+        color: white;
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .about-text h5{
+        color: white;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+}
+
+</style>
+<body>
+    <div class="mine">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <h2 class="logo"><img src="img/logo2.png" class="logo2"> Code<span>Impact</span></h2>
+            </a>
+            <ul>
+                <li><a href="homepage1.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="links.html">Sample Work</a></li>
+                <li><a href="Education.html">Education</a></li>
+            </ul>
+        </nav>
+    <section class="about">
+        <div class="main">
+            <img src="img/prof.jpg">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <h5>Web<span>Developer</span></h5>
+                <p>I'm Lhyndel Acosta Sario, 22 years old, I am a dedicated and enthusiastic student pursuing Information Technology at Phinma Araullo University South Campus. As someone deeply passionate about Technology, I am eager to contribute and to learn from the dynamic environment. Figuring out the complexities of technology, from system design to coding, and all in between, is my passion.
+                    I am a self-reliant individual valuing the freedom to make my own decisions and chart my own course.
+                    My approach to challenges involves breaking down problems into their fundamental components. I find joy in unraveling intricate puzzles.
+                    I am really silent when observing people. I observe what they do, apply what I've learned from them, and consider what I will do so that I don't say or do anything offensive.</p>
+                    <a href="about.html"><button>Learn More</button></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

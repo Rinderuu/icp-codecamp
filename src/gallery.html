@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 120vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)) , url(img/bgbg.png);
+    background-size: cover;
+    font-family: 'Poppins',sans-serif;
+    
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eeeded;
+    font-weight: bold;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    transition: 2.5 ease;
+}
+
+nav ul li a:hover {
+    border-radius: 50%;
+    color: indianred;
+    transform: scale(1.25);
+    scale: 1.5;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-weight: bolder;
+}
+span{
+    color: indianred;
+}
+.logo2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+    margin-left: -57px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;  
+}
+img:hover {
+    max-width: none;
+    transform: scale(1.2);
+}
+img[src="img2/ss.jpg"],
+img[src="img2/2.jpg"],
+img[src="img2/10.jpg"],
+img[src="img2/16.jpg"],
+img[src="img2/14.jpg"],
+img[src="img2/15.jpg"] {
+    height: 400px;
+}
+@media screen and (max-width: 768px){
+    nav {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+    .logo2{
+        position: absolute;
+        float: left;
+        margin-left: -25px;
+        margin-top: 5px;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo"><img src="img2/logo2.png" class="logo2">
+        Code <span>Impact</span>
+        </div>
+        <ul>
+            <li><a href="aboutme.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <section>        
+        <table>
+        <tr>
+            <td><img src="img2/5.jpg" alt="Image 1"></td>
+            <td><img src="img2/6.jpg" alt="Image 2"></td>
+            <td><img src="img2/4.jpg" alt="Image 3"></td>
+        </tr>
+        <tr>
+            <td><img src="img2/14.jpg" alt="Image 4"></td>
+            <td><img src="img2/ss.jpg" alt="Image 5"></td>
+            <td><img src="img2/16.jpg" alt="Image 6"></td>
+        </tr>
+        <tr>
+            <td><img src="img2/8.jpg" alt="Image 4"></td>
+            <td><img src="img2/9.jpg" alt="Image 5"></td>
+            <td><img src="img2/7.jpg" alt="Image 6"></td>
+        </tr>
+        <tr>
+            <td><img src="img2/15.jpg" alt="Image 4"></td>
+            <td><img src="img2/2.jpg" alt="Image 5"></td>
+            <td><img src="img2/10.jpg" alt="Image 6"></td>
+        </tr>
+    </table>
+    </section>
+</body>
+</html>

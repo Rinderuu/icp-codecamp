@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=baloo+bhaijan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    body {
+        background-image: url(bgbg.png);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .mine {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: #eeeded;
+        text-shadow: 10px 1px 10px rgba(0, 0, 0, .5);
+        font-size: 35px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .logo2 {
+        position: absolute;
+        float: left;
+        margin-left: -45px;
+        margin-top: 5px;
+        height: 40px;
+        width: 40px;
+    }
+
+    span {
+        color: #f9004d;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #eeeded;
+        font-weight: bold;
+        transition: 2.5 ease;
+    }
+
+    nav ul li a:hover {
+        border-radius: 50%;
+        color: #f9004d;
+        transform: scale(1.25);
+        scale: 1.5;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+    }
+
+    h1 {
+        color: #eeeded;
+        margin: 20px 0px 20px;
+        font-size: 75px;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    h4 {
+        color: #eeeded;
+        margin: 20px 0px 20px;
+        font-size: 25px;
+    }
+
+    h3 {
+        color: #eeeded;
+        margin: 20px 0px 20px;
+        font-size: 25px;
+    }
+
+    .image {
+        width: 45%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+    }
+
+    .image2 {
+        width: 45%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 115px;
+    }
+
+    .image2 img {
+        height: 100%;
+        position: absolute;
+        left: 10px;
+        bottom: 80px;
+        right: 100px;
+        transition: bottom 1s, left 1s;
+    }
+
+    .image2:hover .shape {
+        left: 20px;
+    }
+
+    .image img {
+        height: 100%;
+        position: absolute;
+        left: 10px;
+        bottom: 70px;
+        right: 100px;
+        transition: bottom 1s, left 1s;
+    }
+
+    .image:hover .download {
+        left: 40%;
+    }
+
+    .image:hover .download2 {
+        left: 35%;
+    }
+
+    .image:hover .download3 {
+        left: 30%;
+    }
+
+    .image:hover .download4 {
+        left: 25%;
+    }
+
+    .image:hover .download5 {
+        left: 20%;
+    }
+
+    footer {
+        background-color: #eeeded;
+        background-blend-mode: darken;
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+
+    }
+
+    .social-media a {
+        color: #0a0a0a;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .social-media a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-p {
+        color: black;
+        text-shadow: 10px 1px 10px rgba(0, 2, 2, 2);
+    }
+    .go-back-button {
+    background-color: indianred;
+    color: white;
+    text-decoration: none;
+    padding: 4px 4px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover {
+    background-color: #ff6384;
+}
+.logo-link{
+    text-decoration: none;
+}
+.hire-me-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #f9004d;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-me-button:hover {
+    background-color: #ff6384;
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+    .logo2{
+        position: absolute;
+        float: left;
+        margin-left: -25px;
+        margin-top: 5px;
+        height: 20px;
+        width: 20px;
+    }
+
+    nav ul li {
+        font-size: small;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h4, h3 {
+        font-size: 18px;
+    }
+
+    .image, .image2 {
+        height: 200px;
+        position: absolute;
+        margin-right: 10px;
+    }
+    .image2{
+        margin-right: -58px;
+    }
+
+    .footer-p {
+        font-size: 14px;
+    }
+
+    .social-media a {
+        margin: 0 3px;
+    }
+
+    .go-back-button, .logo-link {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+
+    .hire-me-button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+</style>
+<body>
+    <div class="mine">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <h2 class="logo"><img src="logo2.png" class="logo2"> Code<span>Impact</span></h2>
+            </a>
+            
+            <ul>
+                <li><a href="homepage1.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="links.html">Sample Work</a></li>
+                <li><a href="Education.html">Education</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h4> My Name is</h4>
+            <h1>Lhyndel <span>Sario</span></h1>
+            <h3>Im a Web Developer</h3>
+            <a href="https://lhyndelsario.jobs180.com/" class="hire-me-button">Hire Me</a>
+        </div>
+        <div class="image2">
+            <img src="wwe.png" class="shape">
+        </div>
+        <div class="image">
+            <img src="download2.png" class="download">
+            <img src="download3.png" class="download2">
+            <img src="download4.png" class="download3">
+            <img src="download5.png" class="download4">
+            <img src="download6.png" class="download5">
+        </div>
+    </div>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/lhyndel.sario.7" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/iamlhyndel/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:your.lhyndelsario94@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="footer-p">&copy; 2023 Lhyndel Sario. All rights reserved.</p>
+    </footer>
+</body>
+</html>
